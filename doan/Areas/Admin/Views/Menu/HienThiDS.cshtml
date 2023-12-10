@@ -1,0 +1,64 @@
+﻿@using doan.Models;
+@model IList<Menu>
+@{
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+	<div class="pagetitle">
+		<h2>Danh sách menu</h2>
+	</div>
+	<p>
+		<a type="button" class="btn btn-success" asp-area="Admin" asp-controller="Menu" asp-action="Them">
+			<i class="bi bi-file-earmark-text me-1"></i>Thêm menu
+		</a>
+	</p>
+	<section class="section dashboard">
+		<div class="row">
+			<div class="col-12">
+				<div class="card recent-sales overflow-auto">
+					<div class="card-body mt-4">
+
+						<table class="table table-borderless datatable">
+							<thead>
+								<tr>
+									<th class="col-1 text-center">#</th>
+									<th class="col-3 text-center">Tiêu Đề</th>
+									<td class="col-2 text-center">ControllerName</td>
+									<td class="col-2 text-center">ActionName</td>
+									<td class="col-1 text-center">Thứ tự</td>
+									<td class="col-1 text-center">Trạng thái</td>
+									<td class="col-1 text-center">Chức năng</td>
+
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									<tr>
+										<th class="text-center" scope="row">@item.ID</th>
+										<td>
+											@item.Ten
+										</td>
+										<td class="ext-center">@item.ControllerName</td>
+										<td class="ext-center">@item.ActionName</td>
+										<td class="ext-center">@item.ThuTu</td>
+										<td class="ext-center">@item.TrangThai</td>
+										
+										<td class="ext-center">
+											<a asp-area="Admin" asp-controller="Menu" asp-action="Sua"
+										   asp-route-id="@item.ID" class="btn btn-primary btn-sm"
+										   title="Chỉnh sửa Menu"><i class="bi bi-pencil"></i></a>
+											<a asp-area="Admin" asp-controller="Menu" asp-action="Xoa"
+										   asp-route-id="@item.ID" class="btn btn-danger btn-sm"
+										   title="Xóa thông tin bài viết"><i class="bi bi-trash"></i></a>
+										</td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>

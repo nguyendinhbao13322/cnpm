@@ -1,0 +1,132 @@
+﻿
+@model IList<GioHangChiTiet>
+
+<!-- BREADCRUMB -->
+		<div id="breadcrumb" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<h3 class="breadcrumb-header">Giỏ hàng</h3>
+						<ul class="breadcrumb-tree">
+							<li><a href="/">Trang chủ</a></li>
+							<li class="active">Giỏ hàng</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /BREADCRUMB -->
+		<p class="text-center pt-2 pb-2">@TempData["msgdathang"]</p>
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					
+					<table class="table">
+					  <thead>
+						<tr>
+						  <th scope="col">Sản phẩm</th>
+						  <th scope="col">Hình ảnh</th>
+						  <th scope="col">Giá</th>
+						  <th scope="col">Số lượng</th>
+						  <th scope="col">Thành tiền</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						  @{
+								long tongtien = 0;
+							}
+						  @foreach(var item in Model)
+							{
+								long thanhtien = (item.Gia * item.SoLuong) ?? 0;
+								tongtien += thanhtien;
+								<tr>
+								  <td>@item.TenSanPham</td>
+								  <td><img src="@item.Anh" height="100" /></td>
+								  <td>$@item.Gia</td>
+								  <td>$@item.SoLuong</td>
+								  <td>$@thanhtien</td>
+								</tr>
+							}
+					  </tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<form asp-action="XacNhanDatHang" method="post">
+						<div class="col-md-7">
+							<!-- Billing Details -->
+							<div class="billing-details">
+								<div class="section-title">
+									<h3 class="title">Thông tin nhận hàng</h3>
+								</div>
+									<div class="form-group">
+										<input class="input" type="text" placeholder="Tên người nhận" name="TenNguoiNhan">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="SoDienThoai" placeholder="Số điện thoại">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="DiaChi" placeholder="Địa chỉ">
+									</div>
+									<div class="order-notes">
+										<textarea class="input" name="TinNhan" placeholder="Lời nhắn"></textarea>
+									</div>
+							</div>
+							<!-- /Billing Details -->
+
+							<!-- Order notes -->
+							<!-- /Order notes -->
+						</div>
+
+						<!-- Order Details -->
+						<div class="col-md-5 order-details">
+							<div class="section-title text-center">
+								<h3 class="title">Hóa đơn</h3>
+							</div>
+							<div class="order-summary">
+								<div class="order-col">
+									<div><strong>Sản phẩm</strong></div>
+									<div><strong>Tổng</strong></div>
+								</div>
+								<div class="order-products">
+									@foreach (var item in Model) 
+									{
+										long thanhtien = (item.SoLuong * item.Gia) ?? 0;
+										<div class="order-col">
+											<div>@item.SoLuong x @item.TenSanPham</div>
+											<div>$@thanhtien</div>
+										</div>
+									}
+								</div>
+								<div class="order-col">
+									<div>Giao hàng</div>
+									<div><strong>Miễn phí</strong></div>
+								</div>
+								<div class="order-col">
+									<div><strong>Tổng hóa đơn</strong></div>
+									<div><strong class="order-total">$@tongtien</strong></div>
+								</div>
+							</div>
+							<button type="submit" class="primary-btn order-submit">Đặt hàng</button>
+						</div>
+					</form>
+					<!-- /Order Details -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->

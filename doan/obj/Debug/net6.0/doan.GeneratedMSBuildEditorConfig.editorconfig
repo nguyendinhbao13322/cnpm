@@ -1,0 +1,201 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = doan
+build_property.RootNamespace = doan
+build_property.ProjectDir = C:\Users\wonje\OneDrive\Desktop\doan\doan\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\wonje\OneDrive\Desktop\doan\doan
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/BaiViet/HienThiBV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFpVmlldFxIaWVuVGhpQlYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/BaiViet/Sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFpVmlldFxTdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/BaiViet/Them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFpVmlldFxUaGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/BaiViet/Xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmFpVmlldFxYb2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/DanhMuc/HienThi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1xIaWVuVGhpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/DanhMuc/Sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1xTdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/DanhMuc/Them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1xUaGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/DanhMuc/Xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFuaE11Y1xYb2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/FileManager/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRmlsZU1hbmFnZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Home/HoaDonChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxIb2FEb25DaGlUaWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Menu/HienThiDS.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxIaWVuVGhpRFMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Menu/Sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxTdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Menu/Them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxUaGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Menu/Xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxYb2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/NguoiDung/HienThiND.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmd1b2lEdW5nXEhpZW5UaGlORC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/NguoiDung/Sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmd1b2lEdW5nXFN1YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/NguoiDung/Them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmd1b2lEdW5nXFRoZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/NguoiDung/Xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTmd1b2lEdW5nXFhvYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/SanPham/HienThiSP.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxIaWVuVGhpU1AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/SanPham/Sua.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxTdWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/SanPham/Them.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxUaGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/SanPham/Xoa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2FuUGhhbVxYb2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Shared/Components/AdminMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5NZW51XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Shared/_SummerNote.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TdW1tZXJOb3RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/BaiVietChiTiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCYWlWaWV0Q2hpVGlldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/ChiTietSanPham.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGlUaWV0U2FuUGhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/CuaHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdWFIYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/DSBaiViet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEU0JhaVZpZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/GioHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHaW9IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/HienThiDangKy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaWVuVGhpRGFuZ0t5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/HienThiDangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIaWVuVGhpRGFuZ05oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Home/QuanLyDonHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWFuTHlEb25IYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Shared/Components/BaiViet/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmFpVmlldFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Shared/Components/Menu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Shared/Components/SanPhamMoi/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2FuUGhhbU1vaVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o36isbi51m
+
+[C:/Users/wonje/OneDrive/Desktop/doan/doan/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4ji1674wow

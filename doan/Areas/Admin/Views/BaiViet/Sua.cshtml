@@ -1,0 +1,42 @@
+﻿@model doan.Models.BaiViet
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h2>Chỉnh sửa bài viết</h2>
+    </div>
+    <form method="post" asp-action="Sua">
+        <input type="hidden" class="form-control" asp-for="ID">
+        <div class="form-group">
+            <label asp-for="TieuDe">Tiêu đề</label>
+            <input type="text" class="form-control" asp-for="TieuDe">
+        </div>
+        <div class="form-group">
+            <label asp-for="NoiDung">Nội dung</label>
+            <textarea class="form-control" asp-for="NoiDung"></textarea>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="control-label">Ảnh</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-success" type="button" onclick="openDialog()">Chọn hình ảnh</button>
+                </div>
+                <input type="text" class="form-control" asp-for="Anh" id="file_input" aria-describedby="button-addon2">
+            </div>
+        </div>
+        
+        <div class="form-group mt-5 mb-5">
+            <label>
+                @Html.CheckBox("TrangThai", Model.TrangThai)
+                Hiển thị
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sửa</button>
+    </form>
+</main>
+
+@{
+    var summerNote = new doan.Areas.Admin.Models.SummerNote("#NoiDung");
+    <partial name="_SummerNote" model="summerNote" />
+}

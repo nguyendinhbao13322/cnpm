@@ -1,0 +1,45 @@
+﻿@model doan.Models.SanPham
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main" id="main">
+    <div class="pagetitle">
+        <h2>Xác nhận xoá sản phẩm</h2>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="ID">ID</label>
+            <input type="text" class="form-control mb-3" asp-for="ID" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="TenSanPham">Tên sản phẩm</label>
+            <input type="text" class="form-control mb-3" asp-for="TenSanPham" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="Anh">Hình ảnh</label>
+            <input type="text" class="form-control mb-3" asp-for="Anh" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="MoTa">Mô tả</label>
+            <input type="text" class="form-control mb-3" asp-for="MoTa" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="Gia">Giá</label>
+            <input type="text" class="form-control mb-3" asp-for="Gia" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="TrangThai">Trạng thái</label>
+            <input type="text" class="form-control mb-3" asp-for="TrangThai" disabled>
+        </div>
+    </div>
+    <form asp-action="Xoa" method="post">
+        <input type="hidden" asp-for="ID">
+        <a href="javascript:history.back()" class="btn btn-lg btn-warning p-2 mr-5">
+            <i class="bi bi-arrow-left-circle"></i> Quay lại
+        </a>
+        <button type="submit" class="btn btn-lg btn-danger p-2">
+            <i class="bi bi-trash-fill"></i> Xóa sản phẩm
+        </button>
+    </form>
+</div>

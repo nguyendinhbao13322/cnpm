@@ -1,0 +1,89 @@
+﻿@using doan.Models;
+@model IList<HoaDonAdmin>
+@{
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+	<div class="pagetitle">
+		<h2>Chi tiết đơn hàng</h2>
+	</div>
+	@{
+		var firstitem = Model.First();
+	}
+	<p>
+		<div class="activity-content">
+			Người nhận: <a href="#" class="fw-bold text-dark">@firstitem.TenNguoiNhan</a>
+        </div>
+		<div class="activity-content">
+			Địa chỉ: <a href="#" class="fw-bold text-dark">@firstitem.DiaChi</a>
+        </div>
+		<div class="activity-content">
+			Tin nhắn: <a href="#" class="fw-bold text-dark">@firstitem.TinNhan</a>
+        </div>
+		<div class="activity-content">
+			Ngày đặt: <a href="#" class="fw-bold text-dark">@firstitem.NgayDat.ToString("dddd, dd MMMM yyyy HH:mm:ss")</a>
+        </div>
+		@switch(firstitem.TrangThai) 
+		{
+			case 1:
+                <div class="d-flex justify-content-center mt-2">
+					<a href="#" class="fw-bold text-dark">Đơn hàng đã được gửi</a>
+				</div>
+                break;
+            case 0:
+                <div class="d-flex justify-content-center mt-2">
+					<a asp-area="Admin" asp-controller="Home" asp-action="HuyDonHang" asp-route-id="@firstitem.IDHoaDon" class="btn btn-success fw-bold text-dark" style="color: #fff !important; margin-right: 14px;">Từ chối</a>
+					<a asp-area="Admin" asp-controller="Home" asp-action="XacNhanDon" asp-route-id="@firstitem.IDHoaDon" class="btn btn-success fw-bold text-dark" style="color: #fff !important;">Xác nhận gửi đơn</a>
+				</div>
+                break;
+            case -1:
+                <div class="d-flex justify-content-center mt-2">
+					<a href="#" class="fw-bold text-dark">Đơn hàng đã bị từ chối</a>
+				</div>
+                break;
+            default:
+                <div class="d-flex justify-content-center mt-2">
+					<a href="#" class="fw-bold text-dark">Trạng thái đơn hàng không xác định</a>
+				</div>
+                break;
+		}
+	</p>
+	<section class="section dashboard">
+		<div class="row">
+			<div class="col-12">
+				<div class="card recent-sales overflow-auto">
+					<div class="card-body mt-4">
+						<table class="table table-borderless datatable">
+							<thead>
+								<tr>
+									<th class="col-3 text-center">Sản phẩm</th>
+									<td class="col-2 text-center">Hình ảnh</td>
+									<td class="col-2 text-center">Đơn giá</td>
+									<th class="col-2 text-center">Số lượng</th>
+									<th class="col-2 text-center">Thành tiền</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									long total = item.Gia * item.SoLuong;
+									<tr>
+										<td>
+											@item.TenSanPham
+										</td>
+										<td class="ext-center">
+											<img src="@item.Anh" alt="Girl in a jacket" height="100">
+										</td>
+										<td class="ext-center">@item.Gia</td>
+										<td class="ext-center">@item.SoLuong</td>
+										<td class="ext-center">@total</td>
+									</tr>
+								}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>

@@ -1,0 +1,44 @@
+﻿@using doan.Areas.Admin.Models
+@model IList<AdminMenu>
+
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+	<ul class="sidebar-nav" id="sidebar-nav">
+
+		<li class="nav-item">
+			<a class="nav-link " href="/Admin">
+				<i class="bi bi-grid"></i>
+				<span>Dashboard</span>
+			</a>
+		</li><!-- End Dashboard Nav -->
+		@foreach (var item in Model.Where(m => m.CapDo == 1).OrderBy(n => n.ThuTu))
+		{
+			var Pid = item.AdminMenuID;
+
+			var Smenu = Model.Where(p => p.MenuCha == Pid).OrderBy(p => p.ThuTu).ToList();
+
+			<li class="nav-item">
+				<a class="nav-link collapsed" data-bs-target="#@item.TenTat" data-bs-toggle="collapse" href="#">
+					<span>@item.TenMenu</span>
+					<i class="bi bi-chevron-bar-down ms-auto"></i>
+				</a>
+			</li>
+
+			<ul id="@item.TenTat" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+				@foreach (var smn in Smenu)
+				{
+					<li>
+						<a href="/Admin/@smn.ControllerName/@smn.ActionName">
+							<i class="bi bi-circle"></i><span>@smn.TenMenu</span>
+						</a>
+					</li>
+				}
+			</ul>
+		}
+
+		@*<li class="nav-heading">Trang</li>*@
+
+	</ul>
+
+</aside><!-- End Sidebar-->

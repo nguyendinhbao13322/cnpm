@@ -1,0 +1,26 @@
+﻿
+@using doan.Utilities
+@model IList<Menu>
+
+<nav id="navigation">
+	<!-- container -->
+	<div class="container">
+		<!-- responsive-nav -->
+		<div id="responsive-nav">
+			<!-- NAV -->
+			<ul class="main-nav nav navbar-nav" style="    flex-direction: row;">
+				
+				@foreach(var item in Model.OrderBy(n=>n.ThuTu)){
+					<li class=""><a href="/@item.ControllerName/@item.ActionName">@item.Ten</a></li>
+				}
+				@if (Functions.IsLogin()) {
+					<li class=""><a asp-controller="Home" asp-action="QuanLyDonHang">ĐƠN CỦA TÔI</a></li>
+				}
+				
+			</ul>
+			<!-- /NAV -->
+		</div>
+		<!-- /responsive-nav -->
+	</div>
+	<!-- /container -->
+</nav>

@@ -1,0 +1,41 @@
+﻿@model doan.Models.Menu
+@{
+	Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+	<div class="pagetitle">
+		<h2>Thêm Menu</h2>
+	</div>
+	<form method="POST" asp-action="Them">
+		<div class="form-group">
+			<label asp-for="Ten">Tiêu đề</label>
+			<input type="text" class="form-control" asp-for="Ten">
+		</div>
+		<div class="form-group">
+            <label asp-for="ControllerName">ControllerName</label>
+            <textarea class="form-control" asp-for="ControllerName"></textarea>
+		</div>
+        <div class="form-group">
+            <label asp-for="ActionName">ActionName</label>
+            <textarea class="form-control" asp-for="ActionName"></textarea>
+        </div>
+        <div class="form-group">
+            <label asp-for="ThuTu">Thứ tự</label>
+            <textarea class="form-control" asp-for="ThuTu"></textarea>
+        </div>
+        
+        
+        <div class="form-group mt-5 mb-5">
+            <label>
+                @Html.CheckBox("TrangThai", false)
+                Hiển thị
+            </label>
+        </div>
+		<button type="submit" class="btn btn-primary">Thêm</button>
+	</form>
+</main>
+
+@{
+    var summerNote = new doan.Areas.Admin.Models.SummerNote("#Content");
+    <partial name="_SummerNote" model="summerNote"/>
+}

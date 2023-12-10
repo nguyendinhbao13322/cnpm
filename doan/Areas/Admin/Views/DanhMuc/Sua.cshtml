@@ -1,0 +1,17 @@
+﻿@model doan.Models.DanhMuc
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+<main id="main" class="main">
+    <div class="pagetitle">
+        <h2>Chỉnh sửa danh mục</h2>
+    </div>
+    <form method="post" asp-action="Sua">
+        <input type="hidden" class="form-control" asp-for="ID">
+        <div class="form-group">
+            <label asp-for="TenDanhMuc">Tên danh mục</label>
+            <input type="text" class="form-control" asp-for="TenDanhMuc">
+        </div>
+        <button type="submit" class="btn btn-primary">Sửa</button>
+    </form>
+</main>

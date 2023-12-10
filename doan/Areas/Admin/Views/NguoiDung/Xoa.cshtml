@@ -1,0 +1,57 @@
+﻿@model doan.Models.NguoiDung
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main" id="main">
+    <div class="pagetitle">
+        <h2>Xác nhận xoá người dùng</h2>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="ID">ID</label>
+            <input type="text" class="form-control mb-3" asp-for="ID" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="HoTen">Họ và tên</label>
+            <input type="text" class="form-control mb-3" asp-for="HoTen" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="TaiKhoan">Tài khoản</label>
+            <input type="text" class="form-control mb-3" asp-for="TaiKhoan" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="MatKhau">Mật khẩu</label>
+            <input type="text" class="form-control mb-3" asp-for="MatKhau" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="SoDienThoai">Số điện thoại</label>
+            <input type="text" class="form-control mb-3" asp-for="SoDienThoai" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="DiaChi">Địa chỉ</label>
+            <input type="text" class="form-control mb-3" asp-for="DiaChi" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="Email">Email</label>
+            <input type="text" class="form-control mb-3" asp-for="Email" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="Admin">Admin</label>
+            <input type="text" class="form-control mb-3" asp-for="Admin" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="TrangThai">Trạng thái</label>
+            <input type="text" class="form-control mb-3" asp-for="TrangThai" disabled>
+        </div>
+    </div>
+    <form asp-action="Xoa" method="post">
+        <input type="hidden" asp-for="ID">
+        <a href="javascript:history.back()" class="btn btn-lg btn-warning p-2 mr-5">
+            <i class="bi bi-arrow-left-circle"></i> Quay lại
+        </a>
+        <button type="submit" class="btn btn-lg btn-danger p-2">
+            <i class="bi bi-trash-fill"></i> Xóa người dùng
+        </button>
+    </form>
+</div>

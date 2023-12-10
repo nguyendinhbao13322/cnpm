@@ -1,0 +1,29 @@
+﻿@model doan.Models.DanhMuc
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="main" id="main">
+    <div class="pagetitle">
+        <h2>Xác nhận xoá danh mục</h2>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="ID">ID</label>
+            <input type="text" class="form-control mb-3" asp-for="ID" disabled>
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="TenDanhMuc">Tên danh mục</label>
+            <input type="text" class="form-control mb-3" asp-for="TenDanhMuc" disabled>
+        </div>
+    </div>
+    <form asp-action="Xoa" method="post">
+        <input type="hidden" asp-for="ID">
+        <a href="javascript:history.back()" class="btn btn-lg btn-warning p-2 mr-5">
+            <i class="bi bi-arrow-left-circle"></i> Quay lại
+        </a>
+        <button type="submit" class="btn btn-lg btn-danger p-2">
+            <i class="bi bi-trash-fill"></i> Xóa 
+        </button>
+    </form>
+</div>

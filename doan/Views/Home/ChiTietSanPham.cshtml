@@ -1,0 +1,108 @@
+﻿
+@model SanPham
+
+	<!-- BREADCRUMB -->
+<div id="breadcrumb" class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="breadcrumb-tree">
+					<li><a href="/">Trang chủ</a></li>
+					<li><a href="#">Chi tiết sản phẩm</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /BREADCRUMB -->
+<!-- SECTION -->
+<div class="section">
+	<!-- container -->
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<!-- Product main img -->
+			<div class="col-md-6">
+				<div id="product-main-img">
+					<div class="product-preview">
+						<img src="@Model.Anh" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- Product details -->
+			<div class="col-md-6">
+				<div class="product-details">
+					<h2 class="product-name">@Model.TenSanPham</h2>
+					<div>
+						<div class="product-rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+						</div>
+						
+					</div>
+					<div>
+						<h3 class="product-price">$@Model.Gia</h3>
+						<span class="product-available">Còn hàng</span>
+					</div>
+					<p></p>
+
+					
+
+					<div class="add-to-cart">
+						<form  asp-controller="Home" method="POST" asp-action="ThemVaoGioHang">
+							<input type="hidden" name="idSanPham" value="@Model.ID"/>
+							<label>Nhập số lượng sản phẩm</label>
+							<br />
+							<input type="text" value="1" name="soLuong" style="font-size: 18px; padding: 10px; width: 60px; text-align: center;" min="1" max="99">
+							<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ hàng</button>
+						</form>
+					</div>
+
+					<ul class="product-links">
+						<li>Chia sẻ:</li>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- /Product details -->
+			<!-- Product tab -->
+			<div class="col-md-12">
+				<div id="product-tab">
+					<!-- product tab nav -->
+					<ul class="tab-nav">
+						<li class="active"><a data-toggle="tab" href="#tab1">Mô tả sản phẩm</a></li>
+					</ul>
+					<!-- /product tab nav -->
+					<!-- product tab content -->
+					<div class="tab-content">
+						<!-- tab1  -->
+						<div id="tab1" class="tab-pane fade in active">
+							<div class="row">
+								<div class="col-md-12">
+									<p>@Html.Raw(Model.MoTa)</p>
+								</div>
+							</div>
+						</div>
+						<!-- /tab1  -->
+						
+					</div>
+					<!-- /product tab content  -->
+				</div>
+			</div>
+			<!-- /product tab -->
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+</div>
